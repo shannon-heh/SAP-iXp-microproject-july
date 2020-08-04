@@ -1,0 +1,716 @@
+.App {
+  text-align: center;
+}
+*{
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #F9F9F9;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+body {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+/************ LEADERBOARD ***********/
+#locations {
+  margin-bottom: 15px;
+  font-size: 14px;
+  width: 15%;
+  height: 25px;
+}
+
+#locations option:hover {
+  background-color: #f0ab00;
+}
+
+#home {
+  text-align: center;
+}
+
+h2 {
+  margin-top: 40px;
+}
+
+.json-to-table {
+  width: 50%;
+  margin: auto;
+  background-color: #CCCCCC;
+}
+
+.json-to-table td {
+  padding-left: 15px;
+  height: 40px;
+  text-align: center;
+}
+
+.json-to-table tr:nth-child(1) {
+  background-color:#f0ab00;
+  font-weight: bold;
+  font-size: 15px;
+  height: 50px;
+}
+
+.json-to-table table {
+  font-size: 14px;
+}
+
+/************ LOGIN ***********/
+
+.Login{
+  margin-top: 15vh;
+  background-color: white;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 330px;
+  color: orange;
+  border: 1px solid #e0e0e0;
+}
+
+.Login form {
+  margin-left: 12px;
+}
+
+.Login p {
+  font-weight: bolder;
+  font-size: 36px;
+  /* color: black; */
+}
+
+.Login input{
+  margin-bottom: 15px;
+  padding: 5px;
+}
+
+.Login input:focus{
+  outline-color: orange;
+}
+
+.login-submit {
+  color: black;
+}
+
+.Login Button{
+  height: 40px;
+  width: 185px;
+  font-size: 16px;
+  border: 8px solid #f0ab00;
+  border-radius: 8px;
+  background-color: #f0ab00;
+  outline: none;
+  margin-top: 10px;
+  margin-left: -10px;
+}
+
+.Login Button:hover {
+  transition: ease-in-out 0.3s;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.Login Button:disabled{
+  color: rgb(114, 112, 112);
+  /* background-color: #e2bc5c;
+  border-color: #e2bc5c; */
+}
+
+.Login Button:active{
+  background-color: rgb(168, 154, 143);
+}
+
+.login-error{
+  margin-top: 10px;
+  color: lightsalmon;
+  text-align: center;
+}
+
+.formContainer{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+/************ COFFEE ***********/
+
+.coffee-button {
+  height: 50px;
+  font-size: 16px;
+  border: 8px solid #f0ab00;
+  border-radius: 8px;
+  background-color: #f0ab00;
+  outline: none;
+  margin-top: 50px;
+}
+
+.coffee-button:hover {
+  transition: ease-in-out 0.3s;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.request-feedback {
+  margin-top: 50px;
+  color: #f0ab00;
+  font-weight: bold;
+}
+
+.coffee-profile {
+  justify-content: center;
+}
+
+.coffee-container {
+  text-align: center;
+}
+
+.coffee-chat-blurb {
+  text-align: center;
+  margin: 30px;
+}
+
+/************ NAVBAR ***********/
+.navbar-nav li {
+  list-style-type: none;
+  margin: 20px;
+}
+
+.navbar-nav {
+  display: flex;
+  margin: 0px;
+  padding: 0px;
+}
+
+.navbar {
+  background-color: black;
+  font-size: 18px;
+}
+
+.nav-item {
+  text-decoration: none;
+  color: #f0ab00;
+}
+
+.nav-item:hover{
+  color: burlywood;
+}
+
+.active {
+  color:white;
+}
+
+.login-link {
+  position: absolute;
+  right: 0;
+}
+
+.nav-button{
+  font-size: 18px;
+  color: #f0ab00;
+  background-color: black;
+  border: none;
+  cursor: pointer;
+}
+
+.nav-button:focus,.nav-button:active{
+  border: none;
+  outline: none;
+}
+
+.Modal{
+  border: 1px solid orange;
+  padding: 20px;
+  font-size: 26px;
+  color: orange;
+  margin: 0px;
+}
+/************ INTERN INFO *************/
+.intern-block {
+  display: inline-block;
+  background-color: white;
+  padding: 50px 70px;
+  width: 480px;
+  margin: 10px;
+  border: 1px solid #e0e0e0;
+}
+
+.points-block {
+  display: inline-block;
+  background-color: white;
+  padding: 50px 70px;
+  width: 480px;
+  margin: 10px;
+  border: 1px solid #e0e0e0;
+}
+
+.info-text {
+  /* color:#adadad; */
+  font-size: 16px;
+  margin-top: 30px;
+  text-align: left;
+}
+
+.interninfo {
+  text-align: center;
+  /* background-color: #f1a025; */
+  background-color: #f9f9f9;
+  height: 100vh;
+  padding: 50px;
+  padding-top: 30px;
+} 
+
+.earn-text {
+  text-align: left;
+  padding-left: 10px;
+}
+
+.earn-list {
+  margin-top: -5px;
+  margin-left: -20px;
+}
+
+
+/************ REDEEM ******************/
+#redeem-page {
+  text-align:center;
+}
+
+#redeem-page p {
+  margin-top: 60px;
+  font-size: 10px;
+}
+
+#redeem-grid {
+  margin-top: 50px;
+}
+
+#row1 img {
+  width: 80%;
+}
+
+#row2 {
+  text-align: center;
+}
+
+#row2 div div{
+  width: 80%;
+  font-weight: bold;
+  margin: auto;
+}
+
+#row3 div div {
+  width: 80%;
+  margin: auto;
+  margin-top: 20px;
+}
+
+#row3 button {
+  width: 50%;
+  height: 40px;
+  font-size: 16px;
+  border: 8px solid #f0ab00;
+  border-radius: 8px;
+  background-color: #f0ab00;
+  outline: none;
+}
+
+#row3 button:hover {
+  transition: ease-in-out 0.3s;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+/************ ADMIN   ***********/
+
+.miniNav{
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  font-size: 18px;
+}
+.miniNav a{
+  text-decoration: none;
+  color: #adadad;
+  padding: 10px;
+  min-width: 100px;
+  border-bottom: 2px solid #adadad;
+  font-weight: bold;
+  text-align: center;
+}
+
+.miniNav a:hover {
+  color: #666666;
+  border-bottom: 2px solid #666666;
+} 
+
+.csv-container{
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.csv-container form{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.csv-container form .submitCsv{
+  width: 150px;
+}
+
+.submitCsv{
+  height: 50px;
+  font-size: 16px;
+  border: 8px solid #f0ab00;
+  border-radius: 8px;
+  background-color: #f0ab00;
+  outline: none;
+  margin-top: 50px;
+}
+
+.submitCsv:hover {
+  transition: ease-in-out 0.3s;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.miniNav .miniActive, .miniNav a.miniActive:hover{
+  text-decoration: none;
+  color: orange;
+  border-bottom: 2px solid orange;
+  cursor: default;
+}
+
+.profileSearch input {
+  margin-top: 40px;
+  font-size: 16px;
+}
+
+.profileSearch input:focus{
+  outline-color: orange;
+}
+
+.container{
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.profileSearch{
+  width: 300px;
+}
+
+.profileSearch input{
+  margin-bottom: 15px;
+  padding: 5px;
+  width: 300px;
+}
+.resultList{
+  position: absolute;
+  background-color: white;
+  width: 300px;
+}
+
+.searchItem{
+  padding: 10px;
+  outline: 0.5px solid black;
+  cursor: pointer;
+  
+}
+
+/************ EVENTS ***********/
+
+.events {
+  background-color: #f9f9f9;
+  height: 100vh;
+  padding: 25vw;
+  padding-top: 30px;
+  text-align: center;
+}
+
+.events h2 {
+  margin-bottom: 30px;
+}
+
+.event {
+  background-color: white;
+  padding: 40px;
+  width: 50vw;
+  margin: 20px;
+  border: 1px solid #e0e0e0;
+  display: flex;
+  position: relative;
+}
+
+.event-header {
+  font-size: 20px;
+  margin: 20px;
+}
+
+.left-eventinfo {
+  position: absolute;
+  right: 60px;
+  top: 60px;
+  text-align: right;
+}
+
+.event button {
+  background-color: #f0ab00;
+  font-size: 16px;
+  border: 8px solid #f0ab00;
+  border-radius: 8px;
+  padding-left: 15px;
+  padding-right: 15px;
+  outline: none;
+  margin-left: 20px;
+  margin-top: 150px;
+  height: 40px;
+}
+
+.event button:hover{
+  transition: ease-in-out 0.3s;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+/******** SOCIAL MEDIA FEED *******/
+.feed {
+  text-align: center;
+  background-color: #f9f9f9;
+  height: 100vh;
+  padding: 30vw;
+  padding-top: 30px;
+  /* justify-content: space-around; */
+}
+
+#new-post {
+  margin: auto;
+  margin-top: 15px;
+}
+
+#new-post:hover {
+  cursor: pointer;
+}
+
+/************ PROFILE ***********/
+
+.profile {
+  text-align: center;
+  background-color: #f9f9f9;
+  height: 100vh;
+  padding: 30vw;
+  padding-top: 30px;
+  /* justify-content: space-around; */
+}
+
+.profile-wrapper{
+  padding: 10px;
+  width: 40vw;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.share-icon {
+  color: #adadad;
+  font-size: 20px;
+  float: right;
+  margin: -40px 25px 20px 0px;
+}
+
+.share-icon:hover {
+  color: #666666;
+  cursor: pointer;
+}
+
+.coffeeList{
+  background-color: white;
+  height: 300px;
+  width: 260px;
+  overflow: scroll;
+  margin: 10px;
+  border: 1px solid #e0e0e0;
+}
+
+.coffeeList::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.coffeeList {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.coffeeHeader {
+  position: absolute;
+  width: 260px;
+  height: 50px;
+  background-color: black;
+  padding: 10px;
+  color: orange;
+  z-index: 10;
+}
+
+.coffee-request-text {
+  margin-top: 8px;
+}
+
+.no-coffee-msg {
+  margin-top: 65px;
+  padding: 10px;
+}
+
+.coffeeEmails {
+  margin-top: 65px;
+  text-align: center;
+  position: relative;
+}
+
+.coffeeItem {
+  padding: 5px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.coffeeEmail {
+  padding: 0px 20px;
+  margin-left: -20px;
+}
+
+.mail-icon {
+  margin: -3px 0px 0px 20px;
+  font-size: 23px;
+  color: #adadad;
+  align-self: right;
+  position: absolute;
+  right: 20px;
+}
+
+.mail-icon:hover {
+  color: #666666;
+  cursor: pointer;
+}
+
+
+.separator {
+  margin: 10px;
+  border-radius: 5px;
+  border-top: 0.5px solid #f3efef;
+}
+.info-block {
+  display: inline-block;
+  background-color: white;
+  padding: 10px;
+  width: 300px;
+  margin: 10px;
+  border: 1px solid #e0e0e0;
+  text-align: center;
+}
+
+.block-header {
+  font-size: 20px;
+  margin: 10px;
+}
+
+.profile-msg{
+  padding:10px;
+  width: 50%;
+  border: 1px solid #f0ab00;
+  color: #f0ab00;
+  font-weight: bold;
+}
+
+.info-group {
+  text-align: left;
+  margin: 20px;
+}
+
+.info-header {
+  color:#adadad;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.promsg{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  
+}
+
+/************ CSV ******************/
+
+.msg-success{
+  border: 1px solid green;
+  color: green;
+  background-color: lightgreen;
+  border-radius: 4px;
+  margin-top: 30px;
+  width: 50%;
+  text-align: center;
+  padding: 10px;
+}
+
+.msg-fail{
+  border: 1px solid darkred;
+  color: darkred;
+  background-color: darksalmon;
+  border-radius: 4px;
+  margin-top: 30px;
+  width: 50%;
+  text-align: center;
+  padding: 10px;
+}
+.msg-sending{
+  border: 1px solid dimgray;
+  color: dimgray;
+  background-color: lightblue;
+  border-radius: 4px;
+  margin-top: 30px;
+  width: 50%;
+  text-align: center;
+  padding: 10px;
+}
+/*************************************/
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
